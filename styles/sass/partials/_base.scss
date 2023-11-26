@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+a{
+    text-decoration: none; //remove underline
+}
+
+button{
+    appearance: none;// removes the default styles provided by the browser
+    cursor: pointer;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 700;
+    @include tablet{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    @include desktop{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    @include tablet{
+        font-size: 36px;
+        font-weight: 800;
+    }
+    @include desktop{
+        font-size: 48px;
+        font-weight: 800;
+    }
+}

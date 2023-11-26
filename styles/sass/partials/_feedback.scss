@@ -1,0 +1,169 @@
+.patient{
+    background: url("../../../assets/images/background/feedbackBag.svg"),rgba(255, 255, 255, 0.50);
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    padding: 1.87rem 0rem 2.77rem 0rem;
+    gap: 2rem;
+    @include tablet{
+        padding: 2.87rem 0rem 3.69rem 0rem;
+        gap: 3.75rem;
+    }
+    @include desktop{
+        padding: 3.56rem 0rem 2.69ram 0rem;
+        gap: 6.25rem;
+    }
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            color: $light-blue;
+            font-size: 0.875rem;
+            font-weight: 700;
+            @include desktop{
+                font-size: 1.25rem;
+            }
+            @include tablet{
+                font-size: 1.5rem;
+            }
+        }
+        h1{
+            margin-top: 1.25rem;
+            margin-bottom: 0.63rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            @include tablet{
+                margin-bottom: 2.5rem;
+                font-size: 2.25rem;
+            }
+            @include desktop{
+                font-size: 3rem;
+            }
+        }
+        p{
+            max-width: 15.5rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            @include tablet{
+                max-width: 36.25rem;
+                font-size: 1.125rem;
+            }
+            @include desktop{
+                max-width: 59.56rem;
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+
+    &__cards{
+        display: flex;
+        flex:1 1  auto;
+        gap:1.88rem;  
+        flex-direction:column;
+        align-items: center;
+
+        @include tablet{
+        }
+        @include desktop{
+            flex-direction: row;
+            gap: 3.75rem;
+        }
+        
+        .fCard{
+            max-width: 19.062rem;
+            height: 11.91rem;
+            padding: 1.43rem 1.43rem;
+            border-radius: 0.84688rem;
+            background: rgba(196, 196, 196, 0.50);
+            display: flex;
+            flex-direction: column;
+            gap: 1.91rem;
+            @include tablet{
+                max-width: 25rem;
+                max-height: 15.625rem;
+                padding: 1.88rem 1.88rem;
+                border-radius: 1.25rem;
+                gap: 2.5rem;
+            }
+             
+            .patient-info{
+                display: flex;
+                align-items: center;
+                gap: 0.95rem;
+                @include tablet{
+                    gap: 1.25rem;
+                }
+                h2{
+                    font-size: 0.84688rem;
+                    font-weight: 700;
+                    @include tablet{
+                        font-size: 1.25rem;
+                    }
+                    @include desktop{
+                        font-size: 1.5rem;
+                    }
+                }
+                p{
+                    font-size: 0.59281rem;
+                    font-weight: 700;
+                    @include tablet{
+                        font-size: 0.875rem;
+                    }
+                }
+                img{
+                    width: 3.33rem;
+                    height: auto;
+                    @include tablet{
+                        width: 4.37rem;
+                    }
+                }
+            }
+            .patient-feedback{
+                span{
+                    .bluePara{
+                        color: $light-blue;
+                    }      
+                }
+                text-align: center;
+                font-size: 0.76219rem;
+                font-weight: 500;
+                @include tablet{
+                    font-size: 1.125rem;
+                }
+            }
+         
+        }
+
+        .fCard{
+            position: relative;
+            .backimg{
+                max-width: 7.75rem;
+                max-height: 12.615rem;
+                position: absolute;
+                left: 5.6rem;
+                bottom: 0.3rem;
+                @include tablet{
+                    max-width: 10.86rem;
+                    max-height: 17.68rem;
+                    left: 6.94rem;
+                    bottom: 0rem;
+                }
+                @include desktop{
+                    max-width: 18.375rem;
+                    max-height: 29.90rem;
+                    left: 3.38rem;
+                    bottom: -4.41rem;
+                }
+            }
+        }
+
+        .patientCard2{
+            background: $light-blue;
+            color: $white;
+        }
+    }
+
+}

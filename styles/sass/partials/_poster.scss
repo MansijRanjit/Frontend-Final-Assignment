@@ -1,0 +1,110 @@
+.poster{
+    //background: #0B153C;
+    background: url("../../../assets/images/background/vaccination\ info.svg"), #0B153C;
+    padding-top: 127px;
+    padding-bottom: 50px;
+
+    display: flex;
+    justify-content:space-around;//
+    flex-wrap: wrap;
+    gap: 55px;//72px
+    @include tablet{
+       // justify-content: space-between; /////////
+    }
+    @include desktop{
+        padding-top: 210px;
+    }
+
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        max-width: 18.5rem;
+        align-items: start;
+        @include tablet{
+            max-width: 31.375rem;
+        }
+        @include desktop{
+            max-width: 37.68rem;//603px
+        }
+        .mainHeading{
+            color: $white;
+            margin:1.25rem 0rem;
+            @include tablet{
+                margin: 2.5rem 0rem;
+            }
+            @include desktop{
+                margin-top: 2.5rem;
+                margin-bottom: 3.13rem;
+            }
+        }
+        .blueHead{
+            color: $light-blue;
+        }
+        .topHeading{
+            color: $light-blue;
+        }
+        .botHeading{
+            color:$white;
+            margin-bottom: 2.5rem;
+            @include desktop{
+                margin-bottom: 3.12rem;
+            }
+        }
+        .botButton{
+            display: flex;
+            gap:1.25rem;
+        }
+    }
+
+    &__image{
+        .posterbox{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            @include tablet{
+                margin-left: 50px;/////
+            }
+            .center{
+                max-width: 16rem;
+                @include tablet{
+                    max-width: 33.25rem;//532px;
+                }    
+            }
+            .left{
+                position:absolute;
+                top: 7rem;
+                right: 14.37rem;
+                max-width:3.12rem ;
+                @include tablet{
+                    max-width: 6.25rem;
+                    top: 14.75rem;
+                    right: 30.13rem;
+                }
+            }
+            .right{
+                position:absolute;
+                top: 7rem;
+                left: 14.41rem;
+                max-width:3.12rem ;
+                @include tablet{
+                    max-width: 6.25rem;
+                    top: 14.75rem;
+                    left: 29.5rem;
+                }
+               
+            }
+            .bot{
+                position:absolute;
+                top: 15rem;
+                right: 2.69rem;
+                max-width: 14.87rem;
+                @include tablet{
+                    max-width: 23.375rem;
+                    top: 32.31rem;
+                    right: 13.01rem;
+                }
+            }
+        }
+    }
+}

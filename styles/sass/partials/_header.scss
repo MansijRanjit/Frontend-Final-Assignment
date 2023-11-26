@@ -1,0 +1,98 @@
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header{
+    //background: #0B153C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__vacLogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 150px;
+        margin-top: 56px;
+        @include tablet{
+            margin-top: 50px;
+        }
+        @include desktop{
+            max-width: 251px;
+            margin-top: 50px;
+        }
+    }
+
+    &__navbar{
+        max-width: 498px;
+        margin-top: 58px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .items{
+            display: flex;
+            gap: 25px;
+            a{
+                font-size: 24px;
+                font-weight: 700;
+                color: rgba(255, 255, 255, 0.50);
+            }
+            .item{
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        .indicator{
+            margin-left: 30px;
+        }
+
+        display: none;
+        @include tablet{
+            display: none;
+        }
+        @include desktop{
+            display:block;
+        }
+    }
+
+    &__navMenu{
+        max-width: 45px;
+        position: absolute;
+        top: 3.13rem;
+        right: 2.19rem;
+
+        @include tablet{
+            right: 50px;
+        }
+        @include desktop{
+            display: none;
+            opacity: 0;
+        }
+    }
+
+    &__status{
+        display: none;
+        @include tablet{
+            display: none;
+        }
+        @include desktop{
+            display: block;
+        }
+    }
+}
+.btn-status{
+    padding: 20px 26px;
+    margin-top: 41px;
+    max-width: 219px;
+    color: #17C2EC;
+
+
+    border-radius: 20px;
+    background: rgba(196, 196, 196, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+

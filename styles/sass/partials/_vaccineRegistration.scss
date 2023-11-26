@@ -1,0 +1,212 @@
+.reg{
+    background:  rgba(255, 255, 255, 0.50);
+}
+.registration{
+    padding: 2.19rem 2.19rem;
+
+    &__heading{
+        font-size: 1.5rem;
+        font-weight: 700;
+        max-width: 14.37rem;
+        @include tablet{
+            font-size: 2.25rem;
+            max-width: 36.62rem;
+        }
+        @include desktop{
+            font-size: 3rem;
+            max-width: 28.25rem;
+        }
+    }
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .body-image{
+            max-width: 19.06rem;
+            position: relative;
+            @include tablet{
+                max-width: 24.75rem;
+            }
+            @include desktop{
+                order: 2;
+                
+            }
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            h2{
+                color: $white;
+                font-size: 0.875rem;
+                max-width: 4.25rem;
+                position: absolute;
+                top: 2.25rem;
+                left: 7.44rem;
+                @include tablet{
+                    font-size: 1.25rem;
+                    max-width: 6.06rem;
+                    top: 2.5rem;
+                    left: 9.87rem;
+                }
+                @include desktop{
+                    font-size: 1.5rem;
+                    max-width: 7.25rem;
+                    top: 2.5rem;
+                    left: 7.25rem;
+                }
+            }
+            .verifyStatus{
+                font-size: 0.875rem;
+                color: $white;
+                max-width: 12.5rem;
+                padding: 1rem 3.31rem;
+                border: $white;
+                border-radius: 0.625rem;
+                box-sizing: border-box;
+                background: rgba(196, 196, 196, 0.25);
+                position: absolute;
+                top: 19rem;
+                left: 3rem;
+
+                @include tablet{
+                    font-size: 1.25rem;
+                    padding: 0.81rem 2.06rem;
+                    top: 26.31rem;
+                    left: 6rem;
+                }
+                @include desktop{
+                    font-size: 1.25rem;
+                    padding: 0.81rem 2.06rem;
+                    top: 21.31rem;
+                    left: 3.69rem;
+                }
+            }
+        }
+
+        .body-form{
+            form{
+                padding-top: 2rem;
+                max-width: 21rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: start;
+                gap: 1.25rem;
+                @include tablet{
+                    max-width: 41rem;
+                }
+                label{
+                    color: #000;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    @include tablet{
+                        font-size: 1.25rem;
+                    }
+                    @include desktop{
+                        font-size: 1.5rem;
+
+                    }
+                }
+                p{
+                    color: rgba(0, 0, 0, 0.50);
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    @include tablet{
+                        font-size: 1.25rem;
+                    }
+                }
+                input{
+                    width: 16.0625rem;
+                    border-radius: 0.625rem;
+                    background: rgba(11, 21, 60, 0.15);
+                    padding: 1rem 1.25rem;
+                    border: $white;
+                    @include tablet{
+                        padding: 1.44rem 1.87rem;
+                        border-radius: 1.25rem;
+                        width: 22rem;
+                    }
+                }
+                .fullName{
+                    @include tablet{
+                        padding: 1.25rem 1.8rem;
+                        width:37rem;
+                    }
+                }
+                .verify{
+                    max-width: 9.37rem;
+                    padding: 1.03rem 3.34rem;
+                    border: $white;
+                    border-radius: 0.625rem;
+                    background: #17C2EC;
+                    color: #FFF;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    @include tablet{
+                        max-width: 12.56rem;
+                        padding: 1.44rem 4.38rem;
+                        border-radius: 1.25rem;
+                        font-size: 1.25rem;
+                    }
+                }
+                .submit{
+                    max-width: 19.0625rem;
+                    padding: 1.03rem 7.84rem;
+                    border: $white;
+                    border-radius: 0.625rem;
+                    background: #17C2EC;
+                    color: #FFF;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    @include tablet{
+                        max-width: 40.75rem;
+                        padding: 1.25rem 17.44rem;
+                        border-radius: 1.25rem;
+                        font-size: 1.25rem;
+ 
+                    }
+                    @include desktop{
+                        max-width: 40.625rem;
+                        font-size: 1.5rem;
+ 
+                    }
+                }
+                span{
+                    display: flex;
+                    gap: 1.25rem;
+                    font-size: 0.875rem;
+                    @include tablet{
+                        gap: 2.88rem ;
+                        font-size: 1.25rem;
+                    }
+                }
+                a{
+                    color: $light-blue;
+                    font-weight: 700;
+                }
+    
+                .phoneSection{
+                    display: flex;
+                    gap: 1.25rem;
+                    flex-wrap: wrap;
+                    @include tablet{
+                        gap:2.25rem;
+                    }
+                }
+                .submitSection{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    padding-top: 2.50rem;
+                }
+            }
+        }
+       
+    }
+}

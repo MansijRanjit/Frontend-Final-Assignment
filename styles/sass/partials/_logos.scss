@@ -1,0 +1,25 @@
+.logo{
+    background: lightgray 50%;
+}
+.logoBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.89rem 0rem 0.64rem 0rem;
+    gap: 0.76rem;
+
+    @include tablet{
+        padding: 1.48rem 0rem 1.39rem 0rem;
+        gap: 1.55rem;
+    }
+    @include desktop{
+        padding: 2.17rem 0rem 2.1rem 0rem;
+        gap: 3.01rem;
+    }
+
+    img{
+        width: 4.53rem;
+        flex: 1 1 auto;
+
+    }
+}

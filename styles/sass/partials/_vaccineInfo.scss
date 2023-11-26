@@ -1,0 +1,109 @@
+.vac{
+    //background:#0B153C;
+    background: url("../../../assets/images/background/vaccination\ info.svg"), #0B153C;
+    // display: flex;
+    // justify-content: center;
+}
+.vaccineInfo{
+   // background:#0B153C;
+    max-width: 19.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:2.38rem;
+    padding-top: 1rem;
+    img{
+        max-width:1.87356rem;
+        max-height: 1.875rem;
+        @include tablet{
+            max-width: 3.12263rem;
+            max-height: 3.125rem;
+        }
+    }
+    @include tablet{
+        max-width: 42rem;
+        gap: 3.25rem;
+    }
+    @include desktop{
+        max-width: 82rem;
+        gap: 1.19rem;
+    }
+
+    &__top{
+        display: flex;
+        align-items: center;
+        gap: 0.63rem;
+        @include tablet{
+            gap: 1.25rem;;
+        }
+        h2{
+            color: $white;
+            font-size: 0.875rem;
+            @include tablet{
+                font-size: 1.5rem;;
+            }
+        }
+        
+    }
+
+    &__card{
+        border-radius: 1.25rem 1.25rem 0rem 0rem;
+        background: rgba(196, 196, 196, 0.10);
+        max-width: 19.02rem;
+        padding: 1.25rem 0.63rem 0.63rem 0.63rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.44rem;
+        @include tablet{
+            max-width: 41.75rem;
+            padding: 2.56rem 2.25rem 2.81rem 0.75rem;
+        }
+        @include desktop{
+            max-width: 81.18rem;
+            padding: 3.1rem 2.49rem 2.56rem 2.5rem;
+        }
+
+        .smallCard{
+            display: flex;
+            gap: 0.63rem;
+            align-items: center;
+            @include tablet{
+                gap: 1.25rem;
+            }
+            h2{
+                max-width: 9.18rem;
+                @include tablet{
+                    max-width:15.43rem ;
+                }
+            }
+        }
+        
+        h2{
+            color: $white;
+            font-size: 0.875rem;
+            @include tablet{
+                font-size: 1.25rem;
+            }
+            @include desktop{
+                font-size: 1.5rem;
+            }
+        }
+        .head{
+            color: $light-white;
+        }
+
+        .info-btn {
+            max-width: 9.375rem;
+            border-radius: 0.625rem;
+            padding: 1.25rem 1.56rem;
+            @include tablet{
+                max-width: 15.8125rem;
+                border-radius: 1.25rem;
+            }
+            @include desktop{
+                max-width: 8.875rem;
+            }
+        }
+    }
+}

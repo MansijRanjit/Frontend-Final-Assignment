@@ -1,0 +1,170 @@
+.vacNeed{
+    //background:#0B153C;
+    background: url(../../../assets/images/background/whygetVaccinated.svg), #0B153C;
+}
+.needBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.63rem 4rem 2.63rem 2.19rem;
+    @include tablet{
+        padding: 3.63rem 4.38rem 2.81rem 4.44rem;
+    }
+    @include desktop{
+        padding: 3.62rem 4.55rem 4.99rem 4.43rem;
+    }
+    &__top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.06rem;
+        @include tablet{
+            gap: 2.55rem;
+        }
+       
+        h1{
+            max-width: 16.56rem;
+            font-size: 1.5rem;
+            color: $white;
+            @include tablet{
+                max-width: 31.5rem;
+                font-size: 2.25rem;
+            }
+            @include desktop{
+                max-width: 31.49rem;
+                font-size: 2.99375rem;
+            }
+        }
+        .needDesc{
+            color: $light-white;
+            font-size: 0.875rem;
+            @include tablet{
+                font-size: 1.24738rem;
+            }
+        }
+    }
+
+    &__bot{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;//1.87rem;
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: end;
+        }
+        a{
+            font-size: 0.875rem;
+            font-weight: 700;
+            @include tablet{
+                font-size: 1.12269rem;
+            }
+        }
+        .large-card{
+            border-radius: 1.25rem 5rem 1.25rem 1.25rem;
+            background: rgba(196, 196, 196, 0.20);
+            max-width: 17.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 1.25rem 1.31rem 2rem 1.25rem;
+            //gap: 1.25rem;
+            @include tablet{
+                border-radius: 3.1185rem 9.3555rem 3.1185rem 3.1185rem;
+                max-width: 28.06rem;
+                padding:2.49rem 3.49rem 4.6rem 2.49rem ;
+                //gap: 2.4rem;
+            }
+            .shield{
+                width: 3.125rem;
+                @include tablet{
+                    width: 6.237rem;
+                }
+            }
+            h1{
+                font-size: 0.875rem;
+                color: #17C2EC;
+                margin: 1.25rem 0rem;
+                @include tablet{
+                    font-size: 1.49688rem;
+                    margin: 2.49rem 0rem 1.87rem 0rem;
+                }
+            }
+            p{
+                color: $white;
+                font-size: 0.75rem;
+                @include tablet{
+                    font-size: 1.12269rem;
+                }
+            }
+            a{
+                color: $light-blue;
+                margin-top: 1.68rem;
+            }
+        }
+       
+        .small-card{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            border-radius: 1.25rem;
+            border: 2.994px solid rgba(255, 255, 255, 0.50);
+            max-width: 11.75rem;
+            padding: 1.31rem 0.75rem 1.47rem 1.24rem;
+            box-sizing: border-box;
+
+            @include tablet{
+                border-radius: 3.1185rem;
+                max-width: 18.5rem;
+                padding: 2.49rem 3rem 3rem 2.49rem;
+                box-sizing: border-box;
+
+            }
+            @include desktop{
+                max-width:21.8295rem ;
+                box-sizing: border-box;
+            }
+
+            img{
+                max-width: 3.125rem;
+                @include tablet{
+                    max-width: 4.36rem;
+                }
+            }
+        
+            h2{
+                color: $white;
+                font-weight: 700;
+                font-size: 0.875rem;
+                //max-width: 9.75rem;
+                margin: 1.82rem 0rem 1.28rem 0rem;
+                @include tablet{
+                    font-size: 1.49688rem;
+                    //max-width:12.54rem;
+                    margin: 2.49rem 0rem 1.56rem 0rem;
+                }
+                @include desktop{
+                    //max-width: 16.02rem;
+                    margin: 2.49rem 0rem 3.56rem 0rem;
+                }
+            }
+            .sh2{
+                @include tablet{
+                    font-size: 1.49688rem;
+                    //max-width:12.54rem;
+                    margin: 2.72rem 0rem 1.65rem 0rem;
+                }
+                @include desktop{
+                    //max-width: 16.02rem;
+                    margin: 2.49rem 0rem 5.36rem 0rem;
+                }
+            }
+            a{
+                color: $light-white;
+            }
+
+        }
+
+    }
+}

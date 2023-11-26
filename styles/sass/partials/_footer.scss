@@ -1,0 +1,47 @@
+.foot{
+    background: url("../../../assets/images/background/footerBackground.svg"), #0B153C;
+}
+.footer{
+    padding-top: 8.31rem;
+    padding-bottom:1.88rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    &__mainLogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 150px;
+        margin-top: 56px;
+        @include tablet{
+            margin-top: 50px;
+        }
+        @include desktop{
+            max-width: 251px;
+            margin-top: 50px;
+        }
+        .line{
+            width:70%;
+        }
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.62rem;
+        align-items: start;
+        a{
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: $light-white;
+        }
+    }
+    &__logos{
+        display: flex;
+        gap: 0.22rem;
+        img{
+            width: 1.11rem;
+            height: 1.11rem;
+        }
+    }
+}
