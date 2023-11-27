@@ -1203,6 +1203,9 @@ header {
 
 .registration {
   padding: 2.19rem 2.19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .registration__heading {
   font-size: 1.5rem;
@@ -1347,7 +1350,9 @@ header {
   border-radius: 0.625rem;
   background: rgba(11, 21, 60, 0.15);
   padding: 1rem 1.25rem;
-  border: white;
+  border-color: transparent;
+  outline: none;
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   .registration__body .body-form form input {
@@ -1360,6 +1365,36 @@ header {
   .registration__body .body-form form .fullName {
     padding: 1.25rem 1.8rem;
     width: 37rem;
+  }
+}
+.registration__body .body-form form .phoneNumber {
+  width: 16.0625rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.625rem;
+  border-color: transparent;
+  background: rgba(11, 21, 60, 0.15);
+  padding: 0.44rem 1.25rem 0.19rem 1.25rem;
+  gap: 0.31rem;
+}
+@media screen and (min-width: 768px) {
+  .registration__body .body-form form .phoneNumber {
+    width: 22rem;
+    border-radius: 1.25rem;
+    padding: 0.94rem 1.87rem;
+    gap: 0.62rem;
+  }
+}
+.registration__body .body-form form .phoneNumber input {
+  padding: 0;
+  margin: 0 1rem;
+  background: none;
+  height: 1.062rem;
+}
+@media screen and (min-width: 768px) {
+  .registration__body .body-form form .phoneNumber input {
+    margin: 0 0.6rem;
+    height: 1.5rem;
   }
 }
 .registration__body .body-form form .verify {
@@ -1408,6 +1443,7 @@ header {
   display: flex;
   gap: 1.25rem;
   font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 768px) {
   .registration__body .body-form form span {
@@ -1415,7 +1451,7 @@ header {
     font-size: 1.25rem;
   }
 }
-.registration__body .body-form form a {
+.registration__body .body-form form .lightblue {
   color: #17C2EC;
   font-weight: 700;
 }
@@ -1841,7 +1877,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 0.31rem;
-  padding: 1rem 1.5rem 1.75rem 1.44rem;
+  padding: 1rem 1.44rem 1.75rem 1.44rem;
   width: 17.5rem;
   box-sizing: border-box;
   border-radius: 0.625rem;
