@@ -1,5 +1,7 @@
 .foot{
-    background: url("../../../assets/images/background/footerBackground.svg"), #0B153C;
+    background: url("../assets/images/background/footerBackground.svg"), #0B153C;
+    @include backgroundPos;
+
 }
 .footer{
     position:relative;

@@ -1,6 +1,8 @@
 .poster{
     //background: #0B153C;
-    background: url("../../../assets/images/background/vaccination\ info.svg"), #0B153C;
+    background: url("../assets/images/background/vaccination\ info.svg"), #0B153C;
+    @include backgroundPos;
+
     padding-top: 127px;
     padding-bottom: 50px;
 

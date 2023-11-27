@@ -1,6 +1,8 @@
 .vacNeed{
     //background:#0B153C;
-    background: url(../../../assets/images/background/whygetVaccinated.svg), #0B153C;
+    background: url(../assets/images/background/whygetVaccinated.svg), #0B153C;
+    @include backgroundPos;
+
 }
 .needBox{
     display: flex;

@@ -1,5 +1,7 @@
 .sym{
-    background: url("../../../assets/images/background/symptoms\ bag.svg"), #0B153C;
+    background: url("../assets/images/background/symptoms\ bag.svg"), #0B153C;
+    @include backgroundPos;
+
 }
 .symptoms{
     display: flex;

@@ -1,6 +1,8 @@
 .vac{
     //background:#0B153C;
-    background: url("../../../assets/images/background/vaccination\ info.svg"), #0B153C;
+    background: url("../assets/images/background/vaccination\ info.svg"), #0B153C;
+    @include backgroundPos;
+
     // display: flex;
     // justify-content: center;
 }

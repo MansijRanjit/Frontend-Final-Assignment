@@ -1,5 +1,7 @@
 .patient{
-    background: url("../../../assets/images/background/feedbackBag.svg"),rgba(255, 255, 255, 0.50);
+    background: url("../assets/images/background/feedbackBag.svg"),rgba(255, 255, 255, 0.50);
+    @include backgroundPos;
+
 }
 .feedback{
     display: flex;

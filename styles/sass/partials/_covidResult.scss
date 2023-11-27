@@ -1,6 +1,8 @@
 .res{
     //background:  #0B153C;
-    background: url(../../../assets/images/background/covidResultsCheck.svg), #0B153C;
+    background: url(../assets/images/background/covidResultsCheck.svg), #0B153C;
+    @include backgroundPos;
+
 }
 .result{
     padding: 5.25rem 2.19rem 2rem 2.19rem;

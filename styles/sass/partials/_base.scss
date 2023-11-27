@@ -49,3 +49,8 @@ h1{
         font-weight: 800;
     }
 }
+@mixin backgroundPos{
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
